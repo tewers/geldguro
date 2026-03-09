@@ -3,47 +3,422 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geldguro.de</title>
+  <!-- SEO Meta -->
+  <title>Geldguro – Finanzen einfach verstehen | Smarte Finanzinformationen</title>
+  <meta name="description" content="Geldguro.de – Deine moderne Plattform für verständliche Finanzinformationen, smarte Tools und klare Orientierung im Finanzdschungel.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://geldguro.de/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Geldguro – Finanzen einfach verstehen">
+  <meta property="og:description" content="Moderne Finanzinformationen, smarte Tools und klare Orientierung – verständlich aufbereitet.">
+  <meta property="og:url" content="https://geldguro.de/">
+  <meta property="og:site_name" content="Geldguro">
+  <!-- <meta property="og:image" content="https://geldguro.de/assets/og-image.jpg"> -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Geldguro</h1>
-    <p>Finanzen einfach verstehen.</p>
+  <!-- ═══════════════════════════════════════
+       HEADER / NAVIGATION
+       ═══════════════════════════════════════ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="#start" class="logo" aria-label="Geldguro – Startseite">Geld<span>guro</span></a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#start">Start</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#produkte">Produkte</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
-
-  <main>
-    <section>
-      <h2>Willkommen auf Geldguro.de</h2>
-      <p>
-        Hier findest du verständliche Inhalte rund um Finanzen, Sparen, Investieren
-        und clevere Entscheidungen im Alltag.
-      </p>
-    </section>
-
-    <section>
-      <h2>Themen</h2>
-      <ul>
-        <li>Sparen im Alltag</li>
-        <li>Grundlagen zum Investieren</li>
-        <li>Finanzielle Planung</li>
-        <li>Tipps für mehr Überblick über dein Geld</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Über die Seite</h2>
-      <p>
-        Diese Website ist aktuell eine Test- und Infoseite und wird nach und nach
-        weiter ausgebaut.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Geldguro.de</p>
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" role="dialog" aria-label="Mobile Navigation">
+    <a href="#start">Start</a>
+    <a href="#vorteile">Vorteile</a>
+    <a href="#produkte">Produkte</a>
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <section id="start" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Deine Finanzplattform
+        </div>
+        <h1>Finanzen einfach <span class="highlight">verstehen.</span> Besser entscheiden. Smarter handeln.</h1>
+        <p class="hero-text">
+          Geldguro macht Finanzen zugänglich: Mit klaren Informationen, modernen Tools und verständlichen Insights – für alle, die ihre Finanzen selbst in die Hand nehmen wollen.
+        </p>
+        <div class="hero-buttons">
+          <a href="#produkte" class="btn btn-primary">Jetzt entdecken</a>
+          <a href="#vorteile" class="btn btn-outline">Mehr erfahren</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <!-- Hier eigenes Hero-Bild/Mockup einsetzen -->
+          <img src="assets/hero-dashboard.jpg" alt="Geldguro Finanz-Dashboard – Übersicht über Finanzdaten" width="640" height="400" loading="eager">
+        </div>
+        <div class="hero-stat stat-1">
+          <div class="stat-value">+24 %</div>
+          <div class="stat-label">Rendite</div>
+        </div>
+        <div class="hero-stat stat-2">
+          <div class="stat-value">12.400+</div>
+          <div class="stat-label">Nutzer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       VORTEILE / USP SECTION
+       ═══════════════════════════════════════ -->
+  <section id="vorteile" class="section vorteile">
+    <div class="container text-center">
+      <span class="section-label fade-in">Warum Geldguro?</span>
+      <h2 class="section-title fade-in">Finanzwissen, das wirklich weiterhilft</h2>
+      <p class="section-subtitle fade-in">Wir machen komplexe Finanzthemen verständlich – ohne Fachchinesisch, dafür mit klarem Fokus auf das, was zählt.</p>
+      <div class="vorteile-grid">
+        <!-- Karte 1 -->
+        <div class="vorteil-card fade-in">
+          <div class="vorteil-icon">📊</div>
+          <h3>Verständliche Inhalte</h3>
+          <p>Finanzthemen klar und einfach erklärt – damit du fundierte Entscheidungen treffen kannst.</p>
+        </div>
+        <!-- Karte 2 -->
+        <div class="vorteil-card fade-in">
+          <div class="vorteil-icon">🛠️</div>
+          <h3>Moderne Tools</h3>
+          <p>Smarte Rechner, Analysen und Insights, die dir helfen, den Überblick zu behalten.</p>
+        </div>
+        <!-- Karte 3 -->
+        <div class="vorteil-card fade-in">
+          <div class="vorteil-icon">💡</div>
+          <h3>Klarheit statt Chaos</h3>
+          <p>Kein Finanzjargon, keine versteckten Kosten – sondern Transparenz und Orientierung.</p>
+        </div>
+        <!-- Karte 4 -->
+        <div class="vorteil-card fade-in">
+          <div class="vorteil-icon">🎯</div>
+          <h3>Smarte Entscheidungen</h3>
+          <p>Wir geben dir die Werkzeuge, um deine finanziellen Ziele aktiv und informiert zu verfolgen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       PRODUKTE / ANGEBOTE
+       ═══════════════════════════════════════ -->
+  <section id="produkte" class="section produkte">
+    <div class="container text-center">
+      <span class="section-label fade-in">Unsere Angebote</span>
+      <h2 class="section-title fade-in">Tools und Guides für deine Finanzen</h2>
+      <p class="section-subtitle fade-in">Entdecke unsere Produkte – entwickelt, um Finanzen greifbar und umsetzbar zu machen.</p>
+      <div class="produkte-grid">
+        <!-- Produkt 1 -->
+        <div class="produkt-card fade-in">
+          <div class="produkt-image">
+            📘
+            <span class="produkt-badge">Neu</span>
+          </div>
+          <div class="produkt-content">
+            <h3>Finanz-Guide</h3>
+            <p>Der kompakte Leitfaden für Einsteiger und Fortgeschrittene – von Budgetplanung bis Vermögensaufbau, verständlich und praxisnah.</p>
+            <a href="#kontakt" class="btn btn-primary btn-sm">Mehr erfahren</a>
+          </div>
+        </div>
+        <!-- Produkt 2 -->
+        <div class="produkt-card fade-in">
+          <div class="produkt-image">
+            🧮
+            <span class="produkt-badge">Beliebt</span>
+          </div>
+          <div class="produkt-content">
+            <h3>Spar-Check</h3>
+            <p>Finde heraus, wo du bares Geld sparen kannst. Unser interaktiver Check analysiert deine Ausgaben und zeigt Optimierungspotenziale.</p>
+            <a href="#kontakt" class="btn btn-primary btn-sm">Jetzt starten</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       ÜBER UNS
+       ═══════════════════════════════════════ -->
+  <section id="ueber-uns" class="section ueber-uns">
+    <div class="container">
+      <div class="ueber-uns-content fade-in">
+        <span class="section-label">Über Geldguro</span>
+        <h2 class="section-title">Vertrauen durch Klarheit</h2>
+        <p>
+          Geldguro wurde mit einer klaren Mission gegründet: Finanzwissen für alle zugänglich zu machen. Wir glauben daran, dass jeder Mensch die Möglichkeit verdient, seine Finanzen zu verstehen und selbstbestimmt zu handeln – unabhängig vom Vorwissen.
+        </p>
+        <p>
+          Unser Team vereint Expertise aus den Bereichen Finanzen, Technologie und Kommunikation. Wir übersetzen komplexe Finanzthemen in verständliche Inhalte und entwickeln Tools, die einen echten Mehrwert bieten. Transparenz, Vertrauen und Qualität sind dabei unsere höchsten Prinzipien.
+        </p>
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <span class="trust-value">12.400+</span>
+            <span class="trust-label">Zufriedene Nutzer</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-value">98 %</span>
+            <span class="trust-label">Weiterempfehlung</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-value">50+</span>
+            <span class="trust-label">Fachartikel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       FAQ
+       ═══════════════════════════════════════ -->
+  <section id="faq" class="section faq">
+    <div class="container text-center">
+      <span class="section-label fade-in">Häufige Fragen</span>
+      <h2 class="section-title fade-in">Das wirst du oft gefragt</h2>
+      <p class="section-subtitle fade-in">Hier findest du Antworten auf die wichtigsten Fragen rund um Geldguro.</p>
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Was ist Geldguro?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Geldguro ist eine moderne Finanzplattform, die Wissen, Tools und Orientierung rund um persönliche Finanzen bietet – verständlich, seriös und unabhängig.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Für wen ist Geldguro gedacht?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Geldguro richtet sich an alle, die ihre Finanzen besser verstehen und smarter handeln möchten – egal ob Einsteiger oder Fortgeschrittene.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Welche Inhalte bietet Geldguro?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Von Fachartikeln über interaktive Tools bis hin zu praxisnahen Guides – wir bieten vielfältige Inhalte rund um Budgetplanung, Sparen, Investieren und finanzielle Bildung.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Ist die Nutzung von Geldguro kostenlos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Viele unserer Inhalte und Tools sind kostenlos zugänglich. Für ausgewählte Premium-Funktionen und vertiefende Guides können zukünftig optionale Angebote bereitstehen.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Wie kann ich Kontakt aufnehmen?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Du erreichst uns jederzeit über unser Kontaktformular weiter unten auf dieser Seite oder per E-Mail an kontakt@geldguro.de.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Ist meine Privatsphäre bei Geldguro geschützt?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Absolut. Datenschutz hat bei uns höchste Priorität. Wir verarbeiten keine persönlichen Finanzdaten und halten uns strikt an die DSGVO. Weitere Informationen findest du in unserer Datenschutzerklärung.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       KONTAKT
+       ═══════════════════════════════════════ -->
+  <section id="kontakt" class="section kontakt">
+    <div class="container">
+      <div class="kontakt-wrapper fade-in">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Wir freuen uns auf deine Nachricht</h2>
+        <p>Hast du Fragen, Anregungen oder möchtest du mehr über Geldguro erfahren? Schreib uns – wir melden uns schnellstmöglich zurück.</p>
+        <a href="mailto:kontakt@geldguro.de" class="kontakt-email">kontakt@geldguro.de</a>
+        <!-- Kontaktformular (visuell, ohne Backend) -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <input type="text" placeholder="Dein Name" aria-label="Name" required>
+            <input type="email" placeholder="Deine E-Mail" aria-label="E-Mail-Adresse" required>
+          </div>
+          <input type="text" placeholder="Betreff" aria-label="Betreff">
+          <textarea placeholder="Deine Nachricht …" aria-label="Nachricht" required></textarea>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#start" class="logo">Geld<span>guro</span></a>
+          <p>Moderne Finanzinformationen, verständlich aufbereitet. Für alle, die smarter mit Geld umgehen wollen.</p>
+        </div>
+        <!-- Navigation -->
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#vorteile">Vorteile</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+          </ul>
+        </div>
+        <!-- Ressourcen -->
+        <div>
+          <h4>Ressourcen</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#" data-legal="legal-impressum">Impressum</a></li>
+            <li><a href="#" data-legal="legal-datenschutz">Datenschutz</a></li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div>
+          <h4>Folge uns</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter / X" title="Twitter / X">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Geldguro. Alle Rechte vorbehalten.</p>
+        <div class="footer-legal">
+          <a href="#" data-legal="legal-impressum">Impressum</a>
+          <a href="#" data-legal="legal-datenschutz">Datenschutzerklärung</a>
+          <a href="#" data-legal="legal-cookies">Cookie-Hinweis</a>
+        </div>
+      </div>
+    </div>
   </footer>
-
+  <!-- ═══════════════════════════════════════
+       LEGAL OVERLAYS (Platzhalter)
+       ═══════════════════════════════════════ -->
+  <!-- Impressum -->
+  <div id="legal-impressum" class="legal-section" role="dialog" aria-label="Impressum">
+    <div class="legal-content">
+      <button class="legal-close" aria-label="Schließen">&times;</button>
+      <h2>Impressum</h2>
+      <p><strong>⚠️ Platzhalter – Bitte mit echten Angaben ersetzen.</strong></p>
+      <p>
+        <strong>Angaben gemäß § 5 TMG:</strong><br>
+        [Vollständiger Name / Firma]<br>
+        [Straße und Hausnummer]<br>
+        [PLZ und Ort]<br>
+        Deutschland
+      </p>
+      <p>
+        <strong>Kontakt:</strong><br>
+        E-Mail: kontakt@geldguro.de<br>
+        Telefon: [Telefonnummer]
+      </p>
+      <p>
+        <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+        [Name des Verantwortlichen]<br>
+        [Adresse]
+      </p>
+      <p><em>Dieses Impressum ist ein Platzhalter und muss vor der Veröffentlichung durch rechtlich geprüfte Angaben ersetzt werden.</em></p>
+    </div>
+  </div>
+  <!-- Datenschutzerklärung -->
+  <div id="legal-datenschutz" class="legal-section" role="dialog" aria-label="Datenschutzerklärung">
+    <div class="legal-content">
+      <button class="legal-close" aria-label="Schließen">&times;</button>
+      <h2>Datenschutzerklärung</h2>
+      <p><strong>⚠️ Platzhalter – Bitte mit einer rechtskonformen Datenschutzerklärung ersetzen.</strong></p>
+      <p>
+        Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Diese Datenschutzerklärung informiert Sie darüber, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und welche Rechte Sie haben.
+      </p>
+      <p><strong>1. Verantwortlicher</strong><br>[Name und Kontaktdaten des Verantwortlichen einfügen]</p>
+      <p><strong>2. Erhebung und Speicherung personenbezogener Daten</strong><br>[Details zur Datenerhebung einfügen – z. B. Server-Logs, Kontaktformular]</p>
+      <p><strong>3. Cookies</strong><br>[Informationen über eingesetzte Cookies und deren Zweck einfügen]</p>
+      <p><strong>4. Ihre Rechte</strong><br>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.</p>
+      <p><em>Dieser Text ist ein Platzhalter und muss vor der Veröffentlichung durch eine rechtlich geprüfte Datenschutzerklärung ersetzt werden.</em></p>
+    </div>
+  </div>
+  <!-- Cookie-Hinweis -->
+  <div id="legal-cookies" class="legal-section" role="dialog" aria-label="Cookie-Hinweis">
+    <div class="legal-content">
+      <button class="legal-close" aria-label="Schließen">&times;</button>
+      <h2>Cookie-Hinweis</h2>
+      <p><strong>⚠️ Platzhalter – Bitte mit konkreten Cookie-Informationen ersetzen.</strong></p>
+      <p>Diese Website verwendet Cookies, um die Nutzererfahrung zu verbessern. Technisch notwendige Cookies werden automatisch gesetzt. Analyse- und Marketing-Cookies werden nur mit Ihrer Zustimmung aktiviert.</p>
+      <p><strong>Welche Cookies verwenden wir?</strong></p>
+      <ul>
+        <li><strong>Notwendige Cookies:</strong> Für die Grundfunktionalität der Website.</li>
+        <li><strong>Analyse-Cookies:</strong> [Platzhalter – z. B. Google Analytics]</li>
+        <li><strong>Marketing-Cookies:</strong> [Platzhalter – z. B. für Werbezwecke]</li>
+      </ul>
+      <p><em>Dieser Text ist ein Platzhalter und muss vor der Veröffentlichung durch rechtlich geprüfte Angaben ersetzt werden.</em></p>
+    </div>
+  </div>
+  <!-- ═══════════════════════════════════════
+       COOKIE BANNER
+       ═══════════════════════════════════════ -->
+  <div class="cookie-banner" role="dialog" aria-label="Cookie-Einwilligung">
+    <div class="cookie-inner">
+      <p class="cookie-text">
+        Wir verwenden Cookies, um dir die bestmögliche Erfahrung auf unserer Website zu bieten.
+        <a href="#" data-legal="legal-cookies" style="text-decoration:underline;">Mehr erfahren</a>
+      </p>
+      <div class="cookie-buttons">
+        <button id="cookie-reject" class="cookie-btn">Ablehnen</button>
+        <button id="cookie-settings" class="cookie-btn">Einstellungen</button>
+        <button id="cookie-accept" class="cookie-btn accept">Akzeptieren</button>
+      </div>
+    </div>
+  </div>
+  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
